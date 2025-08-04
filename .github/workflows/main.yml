@@ -24,7 +24,6 @@ jobs:
 
       - name: Build Docker Image
         run: docker build -t embers10/task1-node .
-        working-directory: ./node-js-sample
 
       - name: Push Docker Image to Docker Hub
         run: docker push embers10/task1-node
