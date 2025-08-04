@@ -23,6 +23,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build Docker Image
+      - working-directory: node-js-sample
         run: docker build -t embers10/task1-node .
 
       - name: Push Docker Image to Docker Hub
